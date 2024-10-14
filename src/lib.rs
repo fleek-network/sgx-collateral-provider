@@ -9,6 +9,10 @@ use ra_verify::types::collateral::SgxCollateral;
 use ra_verify::types::qe_identity::QuotingEnclaveIdentityAndSignature;
 use ra_verify::types::tcb_info::TcbInfoAndSignature;
 
+mod collat_prov;
+
+pub use collat_prov::ExternalCollateralProvider;
+
 /// The PCK Certificate Revocation List is either issues by the Intel SGX Platform CA or by Intel SGX Processor CA.
 /// For more information see: https://download.01.org/intel-sgx/sgx-dcap/1.10/linux/docs/SGX_DCAP_Caching_Service_Design_Guide.pdf.
 pub enum CaIdentifier {
