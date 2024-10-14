@@ -1,0 +1,15 @@
+[package]
+name = "sgx-collateral-provider"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+urlencoding = "2.1"
+ureq = "2.10"
+base16 = "0.2"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0", features = ["raw_value"]}
+x509-cert = { version = "0.2.5"}
+hex = { version = "0.4.3", features = ["serde"]}
+ra-verify = { git = "ssh://git@github.com/fleek-network/fleek-sgx.git", branch = "main" }
