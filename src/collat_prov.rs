@@ -4,6 +4,7 @@ use std::io;
 
 use crate::{get_collateral, CaIdentifier};
 
+/// Provides the SGX collateral from the given quote.
 pub struct ExternalCollateralProvider {
     pccs_url: String,
 }
