@@ -27,6 +27,6 @@ impl CollateralProvider for ExternalCollateralProvider {
         )
         .map(|c| serde_json::to_vec(&c).unwrap())
         .map_err(|e| io::Error::new(io::ErrorKind::Other, format!("{e:?}")))?;
-        Ok(serde_json::to_vec(&collat).unwrap())
+        Ok(collat)
     }
 }
