@@ -12,5 +12,5 @@ serde = { version = "1.0", features = ["derive"] }
 serde_json = { version = "1.0", features = ["raw_value"]}
 x509-cert = { version = "0.2.5"}
 hex = { version = "0.4.3", features = ["serde"]}
-ra-verify = { git = "ssh://git@github.com/fleek-network/fleek-sgx.git", branch = "main" }
-ra-tls = { git = "ssh://git@github.com/fleek-network/fleek-sgx.git", branch = "main" }
+ra-verify = { git = "https://github.com/fleek-network/fleek-sgx.git", branch = "main" }
+ra-tls = { git = "https://github.com/fleek-network/fleek-sgx.git", branch = "main" }
